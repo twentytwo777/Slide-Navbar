@@ -1,0 +1,141 @@
+body {
+    color: #fff;
+    background: url(../img/ironmed.gif);
+    background-color: black;
+    font-family: 'Inter', sans-serif;
+    background-repeat: no-repeat;
+    background-position: center top;
+    width: 100%;
+    height: 100%;
+}
+img {user-select: none;}
+.navbar {
+    display: flex;
+    background-color: rgb(29, 29, 29);
+    margin: 0;
+    padding: 0;
+    z-index: 999999;
+}
+.logo {
+    max-width: 97px;
+    margin-left: 30px;
+    transition: .3s;
+}
+.navbar__toggle {
+    display: none;
+    cursor: pointer;
+    margin-right: 20px;
+    transition: .3s;
+}
+.navbar__toggle:hover {opacity: 0.6;}
+.bros_tog, .bros_tog2, .bros_tog3 {
+    width: 30px;
+    background-color: #fff;
+    height: 3px;
+    margin-bottom: 5px;
+    transition: .3s;
+    border-radius: 2px;
+    margin-left: auto;
+}
+.navbar_ml {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+}
+.navbar_ml i {margin-right: 10px;}
+.navbar_link {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    transition: .3s;
+    letter-spacing: .5px;
+    margin: 0 30px 0 0;
+    position: relative;
+    user-select: none;
+    font-size: 18px;
+}
+.navbar_link:hover {color: #fff;}
+.navbar_link:after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    width: 0;
+    transition: .3s;
+    height: 2px;
+    opacity: 0;
+    margin-top: 2px;
+}
+.navbar_link:hover:after {
+    opacity: 1;
+    width: 100%;
+}
+.navbar_button {
+    text-decoration: none;
+    color: #3498db;
+    font-weight: 600;
+    transition: .3s;
+    letter-spacing: .5px;
+    margin: 0 30px 0 0;
+    border: 5px solid #3498db;
+    border-radius: 50px;
+    padding: 10px 25px;
+    user-select: none;
+    font-size: 18px;
+}
+.navbar_button:hover {
+    background: #3498db;
+    color: #fff;
+}
+.main___pages {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    margin: auto;
+    mix-blend-mode: exclusion;
+    text-align: center;
+    user-select: none;
+}   
+.main___head {
+    font-size: 60px;
+    text-transform: uppercase;
+    font-weight: 900;
+    letter-spacing: .5px;
+}
+.mini______________about {
+    font-size: 20px;
+    text-transform: lowercase;
+    font-weight: 600;
+    letter-spacing: 9.5px;
+}
+.navbar_ml.active {left: 0;}
+@media (max-width: 991px) {
+    .logo {margin-left: 0;}
+    .navbar_ml {
+        position: fixed;
+        z-index: 1000;
+        display: block;
+        top: 0;
+        left: -250px;
+        width: 250px;
+        height: 100vh;
+        overflow: hidden;
+        background: #222;
+        transition: .3s;
+        padding: 10px;
+    }
+    .navbar_link, .navbar_button {margin: 0 0 0 0;}
+    .navbar_item {
+        color: #fff;
+        width: 100%;
+        text-align: center;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .navbar__toggle {display: block;}
+    .main___head {font-size: 26px;}
+    .mini______________about {font-size: 14px; letter-spacing: 0;}
+}
