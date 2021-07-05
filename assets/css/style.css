@@ -145,7 +145,6 @@ img {user-select: none;}
 }
 @media (max-width: 992px) {.hide_txt_pc, .logo_hide_pc {display: none;}}
 @media (max-width: 991px) {
-    .logo {margin-left: 0;}
     .navbar_ml.active {left: 0; width: 100%;}
     .hide_txt_pc.activef, .logo_hide_pc.activef, .button_hide_pc.activef {display: block;}
     .navbar_ml {
