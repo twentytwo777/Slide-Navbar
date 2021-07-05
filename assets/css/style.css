@@ -44,6 +44,28 @@ img {user-select: none;}
     display: flex;
 }
 .navbar_ml i {margin-right: 10px;}
+.logo_hide_pc {
+    max-width: 100px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    display: none;
+}
+.button_hide_pc {
+    background: none;
+    color: #fff;
+    border: 0;
+    outline: 0;
+    transition: .3s;
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-size: 21px;
+    font-weight: 600;
+    display: none;
+}
+.button_hide_pc:hover {color: rgb(212, 212, 212);}
+.button_hide_pc:focus {outline: 0;}
 .navbar_link {
     text-decoration: none;
     color: #fff;
@@ -89,6 +111,16 @@ img {user-select: none;}
     background: #3498db;
     color: #fff;
 }
+.hide_txt_pc {
+    font-size: 13px;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    font-weight: 600;
+    letter-spacing: .5px;
+    display: none;
+}
 .main___pages {
     position: absolute;
     top: 50%;
@@ -111,16 +143,18 @@ img {user-select: none;}
     font-weight: 600;
     letter-spacing: 9.5px;
 }
-.navbar_ml.active {left: 0;}
+@media (max-width: 992px) {.hide_txt_pc, .logo_hide_pc {display: none;}}
 @media (max-width: 991px) {
     .logo {margin-left: 0;}
+    .navbar_ml.active {left: 0; width: 100%;}
+    .hide_txt_pc.activef, .logo_hide_pc.activef, .button_hide_pc.activef {display: block;}
     .navbar_ml {
         position: fixed;
         z-index: 1000;
         display: block;
         top: 0;
         left: -250px;
-        width: 250px;
+        width: 0;
         height: 100vh;
         overflow: hidden;
         background: #222;
