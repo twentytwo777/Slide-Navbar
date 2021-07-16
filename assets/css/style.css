@@ -29,7 +29,7 @@ img {user-select: none;}
 }
 .navbar__toggle:hover {opacity: 0.6;}
 .bros_tog, .bros_tog2, .bros_tog3 {
-    width: 30px;
+    width: 28px;
     background-color: #fff;
     height: 3px;
     margin-bottom: 5px;
