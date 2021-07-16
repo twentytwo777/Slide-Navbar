@@ -58,8 +58,8 @@ img {user-select: none;}
     outline: 0;
     transition: .3s;
     position: absolute;
-    right: 0;
-    top: 0;
+    right: 20px;
+    top: 25px;
     font-size: 21px;
     font-weight: 600;
     display: none;
