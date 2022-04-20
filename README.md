@@ -7,7 +7,7 @@
 - Download this repository
 - Upload it to your project
 - Change the file type on which you will call navbar to module
-- Import Navar class
+- Import Navbar class
 - Call the navbar
 
 ## Peculiarities
